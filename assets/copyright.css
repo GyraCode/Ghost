@@ -1,0 +1,84 @@
+.copyright-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding:4%; /* 增加上下的padding使背景更高 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.copyright-image-container img {
+    height: auto;
+}
+
+.copyright-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.copyright-text-container img {
+    margin-bottom: 10px;
+    height: 50px; /* 使圖片的高度與文字等長 */
+    width: auto; /* 保留圖片原始的寬高比 */
+}
+
+.copyright-text-container p {
+    font-size: 12px; /* 將字體大小調整為12px，使其更小 */
+    color: #777;
+    margin: 0;
+    display: flex; /* 使文字具有相同的高度 */
+    align-items: center; /* 垂直置中文字 */
+    height: 50px; /* 使文字與右邊的圖片等長 */
+}
+
+/* 桌面版設定 */
+.desktopfooter {
+    display: block;
+}
+
+.mb-container,
+.mobilefooter {
+    display: none;
+}
+
+/* 手機版媒體查詢 */
+@media (max-width: 768px) {
+    .copyright-image-container,
+    .copyright-text-container
+    {
+        display: none;
+    }
+    .mb-container {
+        display: block;
+    }
+    .mbfooterlogo{
+
+        margin-top: 30px;
+        margin-bottom: 30px;
+       
+    }
+    .mobilefooter{
+        display: block;
+    }
+
+    .mb-copyright-image-container{
+        text-align: center;
+
+    }
+    .mb-copyright-text-container{
+        text-align: center;
+    }
+
+    .mb-copyright-text-container p {
+        font-size: 12px; /* 將字體大小調整為12px，使其更小 */
+        color: #777;
+
+        margin-top: 30px;
+      
+    }
+}
+
+
+
+

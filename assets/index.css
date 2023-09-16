@@ -1,0 +1,51 @@
+.StartBiz {
+    position: relative;
+}
+
+.index-leftflower {
+    position: absolute;  
+    top: 14.5%; 
+    transform: translateY(-69%);
+    z-index: 5;  
+    width: 30%;
+}
+
+.index-rightflower{
+    position: absolute;  
+    top:14%; 
+    right: 0;
+    transform: translateY(-60%);
+    z-index: 5; 
+}
+
+
+.mobileleftflower,.mobilego{
+    display: none;
+}
+
+@media (max-width: 768px) { /* 假設小於768px就是手機版 */
+    .index-rightflower,
+    .index-leftflower {
+        display: none ; /* 在手機版時隱藏整個容器 */
+    }
+    
+    .mobileleftflower {
+        display: flex;
+        position: absolute;  
+        top: 15%;  /* 確保指定單位，例如 px */
+        left: 0;
+        transform: translateY(-130.5%);
+        z-index: 0; 
+        width: 100%;
+    }
+    .mobilego{
+        display: flex;
+        transform: translateY(-0.5%) translateX(100%);
+        z-index: 0; 
+    }
+    .hp-slogan {
+        position: relative; /* 確保z-index會生效 */
+        z-index: 10;
+    }
+}
+

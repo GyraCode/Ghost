@@ -1,0 +1,173 @@
+.hp-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+background-color: #fff;
+height: 80vh; 
+
+}
+
+.hp-left {
+flex: 1;
+margin-left: 30px;
+}
+
+.hp-right {
+flex: 1;
+margin-left: 10px; 
+}
+
+.hp-title {
+flex-direction: row;
+align-items: center;
+}
+
+.hp-title h1 {
+display: block;
+font-size: 72px;
+font-family: 'Ultra', sans-serif;
+margin: 0;
+text-align: left;
+}
+
+p {
+font-size: 24px;
+margin: 10px 0;
+font-family: 'Noto Sans TC', sans-serif;
+font-weight: 700; 
+}
+
+.hp-buttons {
+display: flex;
+flex-direction: row;
+font-family: 'Noto Sans TC', sans-serif;
+font-weight: 700; 
+}
+
+.hp-yellow-btn {
+background-color: #FAC02C;
+color: white;
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+margin-right: 10px;
+font-size: 18px;  /* adjusted 'size' to 'font-size' */
+border-radius: 12px;
+width: 182px;
+height: 48px;
+}
+
+.hp-green-btn {
+background-color: white;
+color: #6FC750;
+padding: 10px 20px;
+border: 2px solid #6FC750;
+cursor: pointer;
+font-size: 18px;  /* adjusted 'size' to 'font-size' */
+border-radius: 12px;
+width: 182px;
+height: 48px;
+}
+
+.hp-mobile{
+display: none;
+}
+
+
+/*----------- Mobile Layout */
+
+@media (max-width: 768px) {
+
+.hp-container {
+padding: 15px;
+height: auto;  /* 設定為自動，使其基於內容高度 */
+margin-left: 2%;
+padding-bottom: 20%;
+}
+
+.hp-left
+,.hp-right{
+display: none;
+}
+
+.hp-buttons{
+display: none;
+}
+
+.hp-mobile {
+display: block;
+position: relative;
+}
+
+.hp-title {
+display: flex;
+justify-content: space-between;
+align-items: flex-start; /* 這將確保所有內容從頂部開始 */
+}
+
+.title-texts {
+display: flex;
+flex-direction: column; /* 這確保MY緊貼在START的下面 */
+align-items: flex-start; /* 這確保文字靠左 */
+}
+
+.title-texts h1{
+font-size: 54px;
+}
+
+.right-corner-container {
+flex-grow: 1;  /* 允許容器在必要時填充可用空間 */
+display: flex;
+justify-content: flex-end;  
+align-items: flex-start;  
+padding-left: 10%;
+}
+
+
+.right-corner-container img {
+height: 100%; /* 這將使圖片填充其容器的高度 */
+}
+
+
+.hp-images {
+display: flex;
+justify-content: center; /* 這將會使蜜蜂圖片在水平方向上置中 */
+align-items: center; /* 這將會使蜜蜂圖片在垂直方向上置中 */
+height: 100%; /* 這確保了容器的高度足夠，但您可能需要根據具體情況進行調整 */
+}
+
+.bee-image {
+width: 90%; /* 調整大蜜蜂圖片的大小，你可以根據需要設定具體的值 */
+}
+
+img[src="mobileleftcorner.png"] {
+position: absolute;
+bottom: 0; /* 這會把圖像放在容器的底部 */
+transform: translateY(-200%); /* 使用這個來向上移動圖像20px，您可以根據需要調整 */
+}
+
+.hp-slogan{
+z-index: 10;
+}
+
+.hp-slogan h1{
+padding-top: 5%;
+font-size: 54px;
+font-family: 'Ultra', sans-serif;
+margin-bottom: 0;
+
+}
+
+.hp-slogan p{
+font-weight: 900;
+font-size: 24px;
+font-family: 'Ultra', sans-serif;
+font-family: 'Noto Sans TC', sans-serif; 
+text-align: center;
+margin-top: 0;
+
+}
+
+}
+

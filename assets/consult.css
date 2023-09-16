@@ -1,0 +1,150 @@
+.inquiry-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #FDF2D6;
+    padding: 20px;
+    min-height: 80vh; 
+}
+
+.consultpage {
+    display: flex;
+    flex-wrap: nowrap; /* 確保它們在同一行上 */
+    justify-content: center; 
+    align-items: stretch; /* 子元素具有相同的高度 */
+    margin:3% 0 3% 0
+}
+
+
+.form-container {
+    flex: 0 0 80%; /* 更寬一些 */
+    background-color: #FAC02C;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.form-container h1 {
+    font-weight: 900;
+    font-size: 36px;
+    color: #fff;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.form-container h2{
+    font-weight: 400;
+    font-size: 48px;
+    font-family: 'Ultra', sans-serif;
+    color: #FFE5A4
+}
+
+.form-container label{
+    font-weight: 700;
+    font-size: 18px;
+    color: #42403D;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap; 
+    margin-top: 5%;
+}
+
+.input-wrapper { /* 新增的樣式 */
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px; /* 設置間距 */
+    padding: 0 10px; /* 增加點內間距 */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="email"] {
+    width: 100%; /* 讓 input 佔滿其父容器，即 .input-wrapper */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+}
+
+.textareamb{
+    margin-bottom: 5%;
+}
+
+.consult-buttom {
+    display: block;
+    width: 20%;
+    margin: 10px auto 0 auto; /* 使按鈕水平置中 */
+    padding: 10px;
+    background-color:#FDF2D6;
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 18px;
+    color: #42403D;
+    font-family: 'Noto Sans TC', sans-serif;
+    cursor: pointer;
+}
+
+
+.image-container {
+    padding-left: 5%;
+    flex: 0 0 20%; /* 更窄一些 */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+    .consultpage {
+        flex-direction: column;
+    }
+    
+    .form-container {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .image-container {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 20px;  /* 設定上邊距，您可以根據需求調整此值 */
+    }
+    
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-wrapper {
+        width: 100%; /* 這會讓每個input-wrapper在手機版上都佔滿整行 */
+    }
+
+    .image-container{
+        padding-left: 0;
+    }
+
+}

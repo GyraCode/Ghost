@@ -1,0 +1,513 @@
+.second {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+  background: 
+  linear-gradient(175deg, #FDF2D6 29%, transparent 29%, transparent 81%, #E8F2F6 81%),
+  linear-gradient(5deg, #A4C3D0 49.5%, #FAC02C 49.5%);
+  padding: 20px;
+}
+  
+  
+.image-wrapper {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  gap: 20px; 
+}
+
+.contentpage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  align-items: center;
+  margin-top: 150px;  
+  width: 100%; 
+  height: 100%; 
+}
+
+.bee-wrapper {
+  width: 100%;  /* 让它占满一整行 */
+  text-align: center; /* 为了居中图片 */
+
+}
+
+.image-wrapper, 
+.bee-wrapper {
+  width: 100%;  /* 让它们各自占满一整行 */
+  text-align: center; /* 为了居中图片 */
+  margin-top: 5%;  
+  margin-bottom: 5%;
+}
+
+.bug-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greenbug-container, .redbug-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.greenbug-container {
+  margin-right: 10px;  /* 或你需要的任何间距 */
+}
+
+
+
+/* 如果你想要控制這兩個蟲子的圖片大小，你可以如下這樣做: */
+.greenbug-container img, .redbug-container img {
+  width: 100%;  /* 調整為所需的大小 */
+  max-width: 250px;  /* 這只是一個示例值 */
+  height: auto;
+  transition: width 0.3s, height 0.3s;  /* 平滑过渡 */
+}
+
+
+.slogan {
+  display: flex;
+  align-items: center; /* 這會使中間的文字垂直居中 */
+  width: 30%;
+  height: 200px;
+}
+
+.left-image {
+  margin-top: auto;
+}
+
+.right-image {
+  margin-bottom: auto;
+}
+
+.text {
+  flex: 2;
+  text-align: center;
+}
+
+.text p {
+  font-weight: 900;
+  font-size: 24px;
+  font-family: 'Noto Sans TC', sans-serif;
+
+}
+
+.text h1{
+  font-weight: 900;
+  font-size: 36px;
+  color: #fff;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* 服務項目 */
+.serve  {
+  padding: 15px; 
+  margin-bottom: 20px;  
+  width: 100%;
+  text-align: center;
+}
+
+.serve p {
+  font-weight: 900;
+  font-size: 36px;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #fff;
+}
+
+.serve h3 {
+  font-weight: 400;
+  font-size: 54px;
+  font-family: 'Ultra', sans-serif;
+  color: #fff;
+}
+/* 里程碑 */
+.score-wrapper{
+  margin-top: 3%;
+  width: 100%;  /* 让它占满一整行 */
+  text-align: center; /* 为了居中图片 */
+}
+
+/* 擊拳 */
+.head-wrapper{
+  width: 100%;  /* 让它占满一整行 */
+  text-align: center; /* 为了居中图片 */
+  height: 350px;
+}
+
+/* 六張卡片 */
+.option{
+  width: 100%;
+  text-align: center;
+  
+}
+
+.option p {
+  font-weight: 900;
+  font-size: 36px;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #4A7688;
+}
+
+.option h3{
+  font-weight: 400;
+  font-size: 48px;
+  font-family: 'Ultra', sans-serif;
+  color:  #C4D6DE;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-bottom: 3%;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin: 20px;
+  width: 320px;
+  display: flex; 
+  flex-direction: row; /* 確保內容水平對齊 */
+  align-items: center;
+  overflow: hidden; /* 這將幫助確保內容不超出卡片的邊界 */
+  padding: 5px;
+}
+
+.card img {
+  width: 40%;
+  height: auto; /* 這可以確保圖像保持其比例 */
+  max-width: 120px;
+  border-radius: 5px 0 0 5px;
+}
+
+.text-content,
+.text-content-yellow {
+  flex: 1; 
+  padding: 15px;
+  text-align: left;
+}
+
+
+
+.text-content h2 {
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #4A7688;
+}
+
+.text-content-yellow h2{
+  margin-top: 0;
+  font-weight: 900;
+  font-size: 24px;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #FAC02C;
+} 
+
+
+
+.text-content ul li,
+.text-content-yellow ul li
+ {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: 'Noto Sans TC', sans-serif;
+  text-align: left;
+}
+
+.text-content hr {
+  border: 0;
+  border-top: 3px solid #E8F2F6;
+  margin: 10px 0;
+}
+
+.text-content-yellow hr{
+  border: 0;
+  border-top: 3px solid #FDF2D6;
+  margin: 10px 0;
+}
+
+/* 方案 */
+
+/* 新手專案卡片 */
+.new-card {
+  position: relative;
+  width: 320px;
+  background-color: #fff;
+  padding: 20px 0 0 0;
+  margin: 60px 30px 0 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px ;
+}
+
+.new-card-header {
+  position: absolute;
+  top: -17px; 
+  left: 10px;
+  padding: 1px 20px;
+  background-color: #A4C3D0;
+  clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%); /* 修改此值以得到正確的六角形 */
+  z-index: 1;
+}
+
+.new-card-header p{
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.new-card-title {
+  position: relative; /* 讓偽元素基於這個元素定位 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+}
+
+.new-card-title p{
+  color: #4A7688;
+}
+
+.pink-color{
+  background-color:
+  #FFAB99 ;
+}
+
+.new-card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+
+}
+
+.new-card-content p{
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0;
+  font-family: 'Noto Sans TC', sans-serif;
+  
+}
+
+.new-card-title, .new-card-content {
+  padding-left: 10%; /* 或者您想要的其他值 */
+  padding-right: 10%; /* 或者您想要的其他值 */
+}
+
+.new-card-title::after {
+  content: ""; /* 必須設置的值 */
+  position: absolute;
+  left: 20px; /* 這裡是空白的部分 */
+  right: 20px; /* 這裡也是空白的部分 */
+  top: 85%;
+  bottom: 0;
+  height: 3px; /* 這裡設置底線的高度 */
+  background-color: 
+  #E8F2F6; /* 這裡設置底線的顏色 */
+}
+
+.new-learn-more {
+  background-color: #A4C3D0;
+  text-align: right;
+  border-radius: 0 0 10px 10px;
+  cursor: pointer;
+  flex-grow: 1;
+  text-align: center;
+}
+
+.new-learn-more p{
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Noto Sans TC', sans-serif
+}
+
+.price {
+  display: flex; /* 让 "999" 和 "元/月" 并排显示 */
+  align-items: center; /* 垂直居中对齐 */
+  font-size: 24px; /* 调整 "999" 的字体大小，根据需要调整大小 */
+}
+
+.price h5 {
+  margin-right: 5px; /* 在 "999" 右侧添加一些间距 */
+  font-size: 36px; /* 放大 "999" 的字体大小，根据需要调整大小 */
+}
+
+.price p {
+  font-size: 18px; /* 调整 "元/月" 的字体大小，根据需要调整大小 */
+  color: #A19C95;
+}
+
+.mobilescore-score-wrapper,
+.head-wrapper,
+.mobile-content,
+.mobile-slogan
+{
+  display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .second {
+
+    background: 
+    linear-gradient(165deg, #FDF2D6 29.5%, transparent 29.5%, transparent 68.5%, #E8F2F6 68.5%),
+    linear-gradient(18deg, #A4C3D0 57.5%, #FAC02C 57.5%);
+
+  }
+    
+
+  .bug-container {
+    flex-direction: column; /* 垂直堆疊 */
+    margin-top: 50%;
+  }
+
+  .greenbug-container, .redbug-container {
+    width: 100%;  /* 讓容器佔滿整個寬度 */
+    margin-bottom: 10px;  /* 增加一些間距 */
+  }
+
+  .greenbug-container img, .redbug-container img {
+    width: 120%;  /* 使圖片的寬度大於其容器，使其看起來更大 */
+    max-width: none;  /* 移除最大寬度限制 */
+    height: auto;  /* 保持圖片比例 */
+    
+  }
+
+  .greenbug-container {
+    margin-right: 0;  /* 在手机版中移除间距 */
+  }
+
+  
+  .slogan {
+    width: 100%; /* 使 .slogan 在手機上滿版 */
+}
+  .slogan .text p {
+    font-size: 24px;
+  }
+
+  .slogan .text h1 {
+    font-size: 36px;
+  }
+
+  .image-wrapper img[src="greenbugright.png"] {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .image-wrapper img[src="redbugleft.png"] {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .image-wrapper {
+    flex-direction: column-reverse; /* 讓第二張圖在上面，第一張在下面 */
+}
+
+.image-wrapper img {
+  width: 100%;
+  margin: 20px 0;  /* 為圖片添加一些上下邊距 */
+}
+
+.image-wrapper img[src="phone.png"] {
+margin-left: -40%;
+margin-bottom: 10%;
+}
+
+.score-wrapper{
+  display: none;
+}
+
+.mobilescore-score-wrapper {
+  display: block;
+}
+
+
+.mobile-content {
+  position: relative; /* 如果這個不是必要的，可以移除它 */
+  display: inline-block; /* 使其根據內容獲得高度 */
+  width: 100%; /* 如果需要的話，讓其滿寬 */
+}
+
+.mobile-content-flowers {
+  position: relative;
+  height: 250px; /* 這是個估計值，你可能需要根據實際圖片大小調整 */
+  width: 100%;  /* 這是個估計值，你可能需要根據實際圖片大小調整 */
+}
+
+.mobile-content-flowers img[src="mbcontentleftflower.png"], 
+.mobile-content-flowers img[src="mbcontentrightflower.png"] {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+/* 如果左邊的花需要稍微偏移，可以像下面這樣設定 */
+.mobile-content-flowers img[src="mbcontentleftflower.png"] {
+  left: -5%; /* 或者使用百分比、em等其他單位 */
+  width: 60%;
+  top: -10%;
+}
+
+.mobile-content-flowers img[src="mbcontentrightflower.png"] {
+  right: -5%; /* 根據需要進行調整 */
+  top: -40%;
+  left: auto; /* 因為我們要用右側偏移，所以將左側設定為auto */
+}
+
+
+.mobile-content-movingbee {
+  margin-left: 40px; /* 調整為你需要的值 */
+}
+.mobile-slogan{
+  display: block;
+  margin-top: 10%;
+  margin-left: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.mobile-slogan h1{
+
+  font-weight: 400;
+  font-size: 48px;
+  font-family: 'Ultra', sans-serif;
+  color:  #000000;
+  text-align: left;
+  margin-top: 0;    /* 移除上邊距 */
+  margin-bottom: 0; /* 移除下邊距 */
+}
+
+.card-container {
+  display: flex;      /* 啟用flexbox */
+  flex-direction: column; /* 讓卡片垂直排列 */
+  justify-content: space-between; /* 在卡片之間均勻分配空間 */
+}
+
+.new-card {
+  width: 100%; /* 卡片在手機上佔據整個寬度 */
+}
+
+.new-card-content {
+  font-size: 12px; /* 將內容字體大小設為12px */
+}
+}
+
