@@ -9,15 +9,15 @@
 
 .consultpage {
     display: flex;
-    flex-wrap: nowrap; /* 確保它們在同一行上 */
+    flex-wrap: nowrap; 
     justify-content: center; 
-    align-items: stretch; /* 子元素具有相同的高度 */
+    align-items: stretch; 
     margin:3% 0 3% 0
 }
 
 
 .form-container {
-    flex: 0 0 80%; /* 更寬一些 */
+    flex: 0 0 80%; 
     background-color: #FAC02C;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -59,13 +59,13 @@ h1, h2 {
     margin-top: 5%;
 }
 
-.input-wrapper { /* 新增的樣式 */
+.input-wrapper { 
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 5px; /* 設置間距 */
-    padding: 0 10px; /* 增加點內間距 */
+    gap: 5px; 
+    padding: 0 10px; 
 }
 
 label {
@@ -74,7 +74,7 @@ label {
 }
 
 input[type="text"], input[type="email"] {
-    width: 100%; /* 讓 input 佔滿其父容器，即 .input-wrapper */
+    width: 100%;  
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -98,7 +98,7 @@ textarea {
 .consult-buttom {
     display: block;
     width: 20%;
-    margin: 10px auto 0 auto; /* 使按鈕水平置中 */
+    margin: 10px auto 0 auto;  
     padding: 10px;
     background-color:#FDF2D6;
     border: none;
@@ -113,7 +113,7 @@ textarea {
 
 .image-container {
     padding-left: 5%;
-    flex: 0 0 20%; /* 更窄一些 */
+    flex: 0 0 20%;  
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -132,7 +132,7 @@ textarea {
     .image-container {
         width: 100%;
         max-width: 100%;
-        margin-top: 20px;  /* 設定上邊距，您可以根據需求調整此值 */
+        margin-top: 20px;   
     }
     
     .input-group {
@@ -140,7 +140,7 @@ textarea {
     }
 
     .input-wrapper {
-        width: 100%; /* 這會讓每個input-wrapper在手機版上都佔滿整行 */
+        width: 100%;  
     }
 
     .image-container{

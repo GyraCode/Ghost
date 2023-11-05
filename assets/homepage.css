@@ -83,6 +83,8 @@ display: none;
 padding: 15px;
 height: auto;  /* 設定為自動，使其基於內容高度 */
 margin-left: 2%;
+margin-top: 20%;
+margin-bottom: 60%;
 padding-bottom: 20%;
 }
 
@@ -98,12 +100,14 @@ display: none;
 .hp-mobile {
 display: block;
 position: relative;
+
 }
 
 .hp-title {
 display: flex;
 justify-content: space-between;
 align-items: flex-start; /* 這將確保所有內容從頂部開始 */
+
 }
 
 .title-texts {
@@ -122,6 +126,7 @@ display: flex;
 justify-content: flex-end;  
 align-items: flex-start;  
 padding-left: 10%;
+
 }
 
 
@@ -166,6 +171,11 @@ font-family: 'Ultra', sans-serif;
 font-family: 'Noto Sans TC', sans-serif; 
 text-align: center;
 margin-top: 0;
+
+}
+
+.hp-container{
+    
 
 }
 

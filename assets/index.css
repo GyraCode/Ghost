@@ -30,17 +30,18 @@
     }
     
     .mobileleftflower {
-        display: flex;
+        display: block;
         position: absolute;  
-        top: 15%;  /* 確保指定單位，例如 px */
+        top: 5%; /* 使用px而不是%确定元素位置 */
         left: 0;
-        transform: translateY(-130.5%);
         z-index: 0; 
         width: 100%;
     }
     .mobilego{
-        display: flex;
-        transform: translateY(-0.5%) translateX(100%);
+        display: block;
+        position: absolute;
+        top: 6%; /* 修改为具体数值以确保固定位置 */
+        left: 45%; /* 可以调整具体数值来定位 */
         z-index: 0; 
     }
     .hp-slogan {

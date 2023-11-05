@@ -14,13 +14,25 @@
       <nav class="nav" :class="{ open: isOpen }">
         <ul>
           <ul>
-            <li><a href="#">首頁</a></li>
-            <li><a href="#">關於我們</a></li>
-            <li><a href="#">方案與價格</a></li>
-            <li><a href="#">線上諮詢</a></li>
-            <li><a href="#">部落格文章</a></li>
+            <li>
+              <img
+                class="nav-icon"
+                src="/mobilenavback.png"
+                alt="Nav Icon"
+                @click="toggleNav"
+              />
+              <a href="首頁">首頁</a>
+            </li>
+            <li><a href="關於我們">關於我們</a></li>
+            <li><a href="方案與價格">方案與價格</a></li>
+            <li><a href="線上諮詢">線上諮詢</a></li>
+            <li><a href="部落格文章">部落格文章</a></li>
           </ul>
         </ul>
+        <div class="moblie-social-icons">
+          <img src="/mobileig.png" alt="Instagram" />
+          <img src="/mobileline.png" alt="LINE" />
+        </div>
       </nav>
       <div class="social-icons">
         <img src="/instagram.png" alt="Instagram" />

@@ -372,29 +372,29 @@
     
 
   .bug-container {
-    flex-direction: column; /* 垂直堆疊 */
+    flex-direction: column; 
     margin-top: 50%;
   }
 
   .greenbug-container, .redbug-container {
-    width: 100%;  /* 讓容器佔滿整個寬度 */
-    margin-bottom: 10px;  /* 增加一些間距 */
+    width: 100%; 
+    margin-bottom: 10px;  
   }
 
   .greenbug-container img, .redbug-container img {
-    width: 120%;  /* 使圖片的寬度大於其容器，使其看起來更大 */
-    max-width: none;  /* 移除最大寬度限制 */
-    height: auto;  /* 保持圖片比例 */
+    width: 120%;  
+    max-width: none;  
+    height: auto;  
     
   }
 
   .greenbug-container {
-    margin-right: 0;  /* 在手机版中移除间距 */
+    margin-right: 0;  
   }
 
   
   .slogan {
-    width: 100%; /* 使 .slogan 在手機上滿版 */
+    width: 100%; 
 }
   .slogan .text p {
     font-size: 24px;
@@ -417,13 +417,16 @@
   }
 
   .image-wrapper {
-    flex-direction: column-reverse; /* 讓第二張圖在上面，第一張在下面 */
+    flex-direction: column-reverse;
 }
 
 .image-wrapper img {
   width: 100%;
-  margin: 20px 0;  /* 為圖片添加一些上下邊距 */
+  margin: 20px 0;  
 }
+
+
+
 
 .image-wrapper img[src="phone.png"] {
 margin-left: -40%;
@@ -434,21 +437,26 @@ margin-bottom: 10%;
   display: none;
 }
 
+.mobile-head-wrapper img {
+  width: 100%;    
+  height: auto;  
+}
+
 .mobilescore-score-wrapper {
   display: block;
 }
 
 
 .mobile-content {
-  position: relative; /* 如果這個不是必要的，可以移除它 */
-  display: inline-block; /* 使其根據內容獲得高度 */
-  width: 100%; /* 如果需要的話，讓其滿寬 */
+  position: relative; 
+  display: inline-block; 
+  width: 100%;
 }
 
 .mobile-content-flowers {
   position: relative;
-  height: 250px; /* 這是個估計值，你可能需要根據實際圖片大小調整 */
-  width: 100%;  /* 這是個估計值，你可能需要根據實際圖片大小調整 */
+  height: 250px; 
+  width: 100%;  
 }
 
 .mobile-content-flowers img[src="mbcontentleftflower.png"], 
@@ -459,22 +467,22 @@ margin-bottom: 10%;
   z-index: 3;
 }
 
-/* 如果左邊的花需要稍微偏移，可以像下面這樣設定 */
+
 .mobile-content-flowers img[src="mbcontentleftflower.png"] {
-  left: -5%; /* 或者使用百分比、em等其他單位 */
+  left: -5%; 
   width: 60%;
   top: -10%;
 }
 
 .mobile-content-flowers img[src="mbcontentrightflower.png"] {
-  right: -5%; /* 根據需要進行調整 */
+  right: -5%; 
   top: -40%;
-  left: auto; /* 因為我們要用右側偏移，所以將左側設定為auto */
+  left: auto; 
 }
 
 
 .mobile-content-movingbee {
-  margin-left: 40px; /* 調整為你需要的值 */
+  margin-left: 40px; 
 }
 .mobile-slogan{
   display: block;
@@ -492,22 +500,22 @@ margin-bottom: 10%;
   font-family: 'Ultra', sans-serif;
   color:  #000000;
   text-align: left;
-  margin-top: 0;    /* 移除上邊距 */
-  margin-bottom: 0; /* 移除下邊距 */
+  margin-top: 0;    
+  margin-bottom: 0; 
 }
 
 .card-container {
-  display: flex;      /* 啟用flexbox */
-  flex-direction: column; /* 讓卡片垂直排列 */
-  justify-content: space-between; /* 在卡片之間均勻分配空間 */
+  display: flex;      
+  flex-direction: column; 
+  justify-content: space-between; 
 }
 
 .new-card {
-  width: 100%; /* 卡片在手機上佔據整個寬度 */
+  width: 100%; 
 }
 
 .new-card-content {
-  font-size: 12px; /* 將內容字體大小設為12px */
+  font-size: 12px; 
 }
 }
 

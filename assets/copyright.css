@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    padding:4%; /* 增加上下的padding使背景更高 */
+    padding:4%; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -19,17 +19,17 @@
 
 .copyright-text-container img {
     margin-bottom: 10px;
-    height: 50px; /* 使圖片的高度與文字等長 */
-    width: auto; /* 保留圖片原始的寬高比 */
+    height: 50px; 
+    width: auto;
 }
 
 .copyright-text-container p {
-    font-size: 12px; /* 將字體大小調整為12px，使其更小 */
+    font-size: 12px; 
     color: #777;
     margin: 0;
-    display: flex; /* 使文字具有相同的高度 */
-    align-items: center; /* 垂直置中文字 */
-    height: 50px; /* 使文字與右邊的圖片等長 */
+    display: flex; 
+    align-items: center; 
+    height: 50px; 
 }
 
 /* 桌面版設定 */
@@ -42,6 +42,66 @@
     display: none;
 }
 
+.info-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: start; 
+}
+
+.info-div {
+    flex: 1; 
+    padding: 0 10px; 
+    border-left: 3px solid #A19C95;
+    white-space: nowrap;
+    margin-left: 50px;
+}
+
+
+.info-div h2 {
+    margin: 0 0 5px 0; 
+    font-size: 1em; 
+}
+
+.info-div p {
+    margin: 0; 
+    font-size: 13px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 900;
+
+}
+
+.info-div a,
+.info-div a:link,    
+.info-div a:visited, 
+.info-div a:hover,   
+.info-div a:active,  
+.info-div a:focus {
+    font-size: 13px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 900;
+    color: #4A7688;
+    text-decoration: none;
+}
+
+.Companycon{
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.Company{
+    font-size: 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    color: #42403D;
+}
+
+.Company-EN{
+    font-size: 12px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+    color: #42403D;
+}
+
 /* 手機版媒體查詢 */
 @media (max-width: 768px) {
     .copyright-image-container,
@@ -49,15 +109,56 @@
     {
         display: none;
     }
-    .mb-container {
+    .mb-container,
+    .mb-info-container{
         display: block;
     }
     .mbfooterlogo{
-
         margin-top: 30px;
         margin-bottom: 30px;
-       
     }
+
+    .mb-container{
+        width: 90%;
+    }
+
+    .mb-Company{
+        font-size: 18px;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 400;
+        color: #42403D;
+    }
+    .mb-Company-EN{
+        font-size: 12px;
+        font-family: 'Noto Sans TC', sans-serif;
+        font-weight: 400;
+        color: #42403D;
+    }
+ 
+
+    .mb-info-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        transform: translateX(-50px);
+      }
+    
+      .info-pair {
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      .info-div {
+        margin-bottom: 10px; 
+        margin-left: 30px;
+      }
+    
+      .info-pair .info-div {
+        width: 50%; 
+        box-sizing: border-box; 
+      }
+
+
     .mobilefooter{
         display: block;
     }
@@ -71,7 +172,7 @@
     }
 
     .mb-copyright-text-container p {
-        font-size: 12px; /* 將字體大小調整為12px，使其更小 */
+        font-size: 12px; 
         color: #777;
 
         margin-top: 30px;
